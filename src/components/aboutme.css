@@ -1,4 +1,92 @@
 .aboutme {
-    height: 100vh;
-    width: 100%;
+  height: 100vh;
+  width: 100%;
+  padding: 1rem;
+  position: relative;
 }
+
+.aboutme h2 {
+  color: black;
+  position: absolute;
+  width: 100vw;
+  top: 60px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.hello-background {
+  position: absolute;
+  font-size: 8rem;
+  font-weight: bold;
+  color: #f1f1f1;
+  z-index: -1;
+  position: absolute;
+  top: 150px;
+  left: 15%;
+  line-height: 1.1;
+}
+
+.about-me-bio {
+  position: absolute;
+  font-size: 1.75rem;
+  top: 200px;
+  width: 65%;
+  left: 20%;
+}
+
+@media all and (max-width: 485px) {
+  .aboutme h2 {
+    top: 50px;
+  }
+  .hello-background {
+    font-size: 6rem;
+  }
+  .about-me-bio {
+    position: absolute;
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (max-width: 430px) {
+    .aboutme h2 {
+      top: 50px;
+    }
+    .hello-background {
+      font-size: 6rem;
+      left: 13%;
+    }
+    .about-me-bio {
+      position: absolute;
+      font-size: 1.5rem;
+      left: 18%;
+    }
+  }
+  
+
+@media all and (max-width: 375px) {
+    .aboutme h2 {
+        top: 50px;
+      }
+      .hello-background {
+        font-size: 5rem;
+      }
+      .about-me-bio {
+        position: absolute;
+        font-size: 1.25rem;
+      }
+}
+
+@media all and (max-width: 320px) {
+    .aboutme h2 {
+        top: 50px;
+      }
+      .hello-background {
+        font-size: 4rem;
+      }
+      .about-me-bio {
+        position: absolute;
+        font-size: 1.20rem;
+        top: 175px;
+      }
+}
+

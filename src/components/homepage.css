@@ -39,7 +39,7 @@ h2 {
   padding: 1rem;
 }
 
-.btns button {
+.btns a {
   padding: 0.5rem 2rem 0.5rem 2rem;
   white-space: nowrap;
   outline: none;
@@ -51,6 +51,7 @@ h2 {
   margin: 0.2rem;
   transition: all 0.5s;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .btns button:hover {

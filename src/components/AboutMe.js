@@ -1,14 +1,27 @@
 import React from 'react'
 import './aboutme.css'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 
 function AboutMe () {
-  AOS.init({duration: 400, mirror: true,});
-
   return (
-    <div className='aboutme' data-aos='fade-up-left'>
-      AboutMe
+    <div className='aboutme' id="about-me">
+      <h2 className='about-me-header'>About me</h2>
+      <p
+        className='hello-background'
+        data-aos='fade-up'
+        data-aos-duration={1000}
+      >
+        Hello!
+      </p>
+      <p
+        className='about-me-bio'
+        data-aos='fade-up'
+        data-aos-delay={500}
+        data-aos-duration={1000}
+      >
+        My name is Jay B. Crisostomo, and I love{' '}
+        <strong>front-end development</strong>. Using existing web technologies to
+        create cool products and solve problems.
+      </p>
     </div>
   )
 }

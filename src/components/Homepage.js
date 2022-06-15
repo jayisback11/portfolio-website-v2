@@ -13,7 +13,7 @@ function Homepage () {
       className='background-image'
       bgImage={BackgroundImage}
       bgImageAlt='the cat'
-      strength={300}
+      strength={400}
     >
       <div className='homepage-content'>
         <h1 data-aos='fade-up-right'>Jay Bautista Crisostomo</h1>
@@ -26,8 +26,8 @@ function Homepage () {
           data-aos-anchor-placement='top-bottom'
           data-aos-delay={800}
         >
-          <button>About me</button>
-          <button>Latest Projects</button>
+          <a href='#about-me'>About me</a>
+          <a>Latest Projects</a>
         </div>
       </div>
     </Parallax>
