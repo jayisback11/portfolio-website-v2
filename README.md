@@ -8,9 +8,9 @@
 </p>
 
 ## **Description**
-My first portfolio website was not good enough because it lacks animations and it doesn't show what I know.  
-  
-The purpose of this new portfolio website is to show what I've learned. This includes:
+My first portfolio website was insufficient since it lacked animations and did not demonstrate my abilities.
+
+This new portfolio website's goal is to demonstrate what I've learned. This includes the following:
 - Responsive Web Design
 - Website Load Speed
 - Outstanding Web Design

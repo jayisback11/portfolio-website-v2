@@ -11,6 +11,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transition: all 1s;
 }
 
 .homepage-content h1,
@@ -25,33 +26,69 @@ h2 {
 }
 
 .homepage-content h2 {
-  font-size: 2rem;
+  font-size: 3rem;
+  text-align: center;
 }
 
-.homepage-content button {
+.btns {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.btns button {
   padding: 0.5rem 2rem 0.5rem 2rem;
-  margin-top: 1rem;
+  white-space: nowrap;
   outline: none;
-  border: none;
-  border-radius: 0.5rem;
+  font-size: 1.15rem;
+  border: 2px solid white;
+  color: white;
   cursor: pointer;
+  background-color: #241c79;
+  margin: 0.2rem;
+  transition: all 0.5s;
+  box-sizing: border-box;
 }
 
-@media all and (max-width: 320px) {
+.btns button:hover {
+  transform: translate(5px, -5px);
+  border-top: 2px solid #241c79;
+  border-right: 2px solid #241c79;
+}
+
+@media all and (max-width: 485px) {
   .homepage-content h1 {
+    font-size: 3.8rem;
+  }
+
+  .homepage-content h2 {
     font-size: 2rem;
   }
-  
-  .homepage-content h2 {
-    font-size: 1rem;
+}
+
+@media all and (max-width: 414px) {
+  .homepage-content h1 {
+    font-size: 3rem;
   }
-  
-  .homepage-content button {
-    padding: 0.5rem 2rem 0.5rem 2rem;
-    margin-top: 1rem;
-    outline: none;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
+
+  .homepage-content h2 {
+    font-size: 2rem;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .btns {
+    flex-direction: column;
+  }
+
+  .homepage-content h1 {
+    font-size: 3rem;
+  }
+
+  .homepage-content h2 {
+    font-size: 1.75rem;
   }
 }
