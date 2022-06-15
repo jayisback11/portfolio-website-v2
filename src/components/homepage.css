@@ -1,0 +1,57 @@
+.background-image {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+}
+
+.homepage-content {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.homepage-content h1,
+h2 {
+  color: white;
+  font-weight: normal;
+}
+
+.homepage-content h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.homepage-content h2 {
+  font-size: 2rem;
+}
+
+.homepage-content button {
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  margin-top: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+@media all and (max-width: 320px) {
+  .homepage-content h1 {
+    font-size: 2rem;
+  }
+  
+  .homepage-content h2 {
+    font-size: 1rem;
+  }
+  
+  .homepage-content button {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+}
