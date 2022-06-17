@@ -3,7 +3,7 @@ import './aboutme.css'
 
 function AboutMe () {
   return (
-    <div className='aboutme' id="about-me">
+    <div className='aboutme' id='about-me'>
       <h2 className='about-me-header'>About me</h2>
       <p
         className='hello-background'
@@ -18,9 +18,9 @@ function AboutMe () {
         data-aos-delay={500}
         data-aos-duration={1000}
       >
-        My name is Jay B. Crisostomo, and I love{' '}
-        <strong>front-end development</strong>. Using existing web technologies to
-        create cool products and solve problems.
+        My name is Jay B. Crisostomo, and I love
+        <strong> front-end development</strong>. Using existing web technologies
+        to create cool products and solve problems.
       </p>
     </div>
   )

@@ -54,7 +54,7 @@ h2 {
   text-decoration: none;
 }
 
-.btns button:hover {
+.btns a:hover {
   transform: translate(5px, -5px);
   border-top: 2px solid #241c79;
   border-right: 2px solid #241c79;
