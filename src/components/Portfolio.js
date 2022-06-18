@@ -6,10 +6,15 @@ import CodeIcon from '@mui/icons-material/Code'
 
 function Portfolio () {
   return (
-    <div className='porfolio'>
+    <div className='porfolio' id='portfolio'>
       <h2>Projects</h2>
       {projects.map((project, index) => (
-        <div className='project' key={index} data-aos='fade-up' data-aos-duration={1000}>
+        <div
+          className='project'
+          key={index}
+          data-aos='fade-up'
+          data-aos-duration={1000}
+        >
           <img src={project.image} alt='' />
           <div className='project-description'>
             <h3>{project.name}</h3>

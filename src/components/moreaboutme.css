@@ -1,0 +1,94 @@
+.more-about-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 5%;
+  height: auto;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+.more-about-me h2 {
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.more-about-me-bio {
+  font-size: 1.75rem;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.three-icons {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: row;
+  width: 100%;
+}
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.icon-container img {
+  width: 200px;
+}
+
+.icon-container h3 {
+  font-size: 2rem;
+  white-space: nowrap;
+}
+
+.icon-container p {
+  font-size: 1.25rem;
+  text-align: center;
+  width: 300px;
+}
+
+@media (max-width: 1000px) {
+  .three-icons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 510px) {
+  .more-about-me-bio {
+    font-size: 1.55rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .more-about-me h2 {
+    font-size: 2.5rem;
+  }
+  
+  .more-about-me-bio {
+    font-size: 1.2rem;
+  }
+  
+  .icon-container img {
+    width: 150px;
+  }
+  
+  .icon-container h3 {
+    font-size: 1.5rem;
+    white-space: nowrap;
+  }
+  
+  .icon-container p {
+    font-size: 1rem;
+    text-align: center;
+    width: 300px;
+  }
+}
+
+
+
+

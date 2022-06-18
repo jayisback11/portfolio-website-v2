@@ -9,7 +9,7 @@ export const projects = [
     liveLink: 'https://whimsical-sawine-30fc10.netlify.app/',
     githubLink: 'https://github.com/jayisback11/nolm',
     description:
-      'NOLM House Church is a growing company church that welcomes anyone and wants to make a difference. That is why I built this website for my client. People can learn more about NOLM House Church by visiting the website.',
+      'NOLM House Church is a growing church that welcomes anyone and wants to make a difference. That is why I built this website for my client. People can learn more about NOLM House Church by visiting the website.',
     libraries: ['Firebase', 'Material-UI']
   },
   {
@@ -24,7 +24,7 @@ export const projects = [
   {
     name: 'Netflix Clone',
     image: NetflixImage,
-    liveLink: 'https://app.netlify.com/sites/netflix-clone-jc/overview',
+    liveLink: 'https://netflix-clone-jc.netlify.app/',
     githubLink: 'https://github.com/jayisback11/netflix-clone',
     description:
       'I learned how to work with an API and display movies on a screen. This clone is also mobile responsive. As a result, any device will be able to access this website.',

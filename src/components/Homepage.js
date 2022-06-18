@@ -27,7 +27,7 @@ function Homepage () {
           data-aos-delay={800}
         >
           <a href='#about-me'>About me</a>
-          <a>Latest Projects</a>
+          <a href='#portfolio'>Latest Projects</a>
         </div>
       </div>
     </Parallax>
