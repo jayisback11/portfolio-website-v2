@@ -76,7 +76,6 @@
   white-space: nowrap;
   outline: none;
   font-size: 1.3rem;
-  border: 2px solid black;
   color: white;
   cursor: pointer;
   background-color: #241c79;
@@ -283,7 +282,6 @@
   }
   .project-links a {
     font-size: 0.6rem;
-    
   }
 }
 
@@ -318,6 +316,6 @@
 
 @media (max-width: 305px) {
   .project-links {
-    bottom: -5px
+    bottom: -5px;
   }
 }

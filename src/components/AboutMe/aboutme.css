@@ -34,6 +34,12 @@
   left: 20%;
 }
 
+@media all and (min-width: 1241px) {
+  .aboutme {
+    height: 28vw;
+  }
+}
+
 @media all and (max-width: 1241px) {
   .aboutme {
     height: 40vw;
