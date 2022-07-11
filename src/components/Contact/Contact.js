@@ -1,11 +1,15 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import './contact.css'
 import emailjs from '@emailjs/browser'
 import { icons } from './socialIcons'
-import SendIcon from '@mui/icons-material/Send';
+import ContactSVG from '../../assets/images/svg/contact.svg'
 
 function Contact () {
   const form = useRef()
+  const [fullName, setFullname] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [success, isSuccess] = useState(false)
 
   const sendEmail = e => {
     e.preventDefault()
@@ -18,16 +22,28 @@ function Contact () {
         'dFSzfOLyvGNa9_KBw'
       )
       .then(
-        result => {},
+        result => {
+          setFullname('')
+          setEmail('')
+          setMessage('')
+          isSuccess(true)
+        },
         error => {}
       )
   }
   return (
     <div className='contact'>
+      <img
+        src={ContactSVG}
+        alt=''
+        data-aos='fade-down-right'
+        data-aos-duration={2000}
+        data-aos-offset={500}
+      />
       <h2>Contact</h2>
       <div className='social-icons'>
         {icons.map((icon, index) => (
-          <a href={icon.link} target='_blank'>
+          <a href={icon.link} target='_blank' rel='noreferrer'>
             <icon.icon fontSize='large' />
           </a>
         ))}
@@ -38,14 +54,40 @@ function Contact () {
         as possible.
       </p>
       <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type='text' name='user_name' placeholder='Full Name' />
-        <label>Email</label>
-        <input type='email' name='user_email' placeholder='Email' />
-        <label>Message</label>
-        <textarea name='message' placeholder='Message' />
-        <input className='submit-btn' type='submit' value='Send'/>
+        <input
+          type='text'
+          onChange={event => setFullname(event.target.value)}
+          value={fullName}
+          name='user_name'
+          placeholder='Full Name'
+          required
+        />
+        <input
+          type='email'
+          onChange={event => setEmail(event.target.value)}
+          name='user_email'
+          placeholder='Email'
+          value={email}
+          required
+        />
+        <textarea
+          name='message'
+          placeholder='Message'
+          onChange={event => setMessage(event.target.value)}
+          value={message}
+          required
+        />
+        <input className='submit-btn' type='submit' value='Send' />
       </form>
+      {success && (
+        <p
+          className='message-success'
+          data-aos='fade-down-right'
+          data-aos-offset={-500}
+        >
+          Email Sent!
+        </p>
+      )}
     </div>
   )
 }

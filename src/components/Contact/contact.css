@@ -5,6 +5,16 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.contact img {
+  position: absolute;
+  z-index: -1;
+  width: min(700px, 100);
+  right: 0;
+  bottom: -15px;
 }
 
 .contact h2 {
@@ -41,12 +51,6 @@
   flex-direction: column;
 }
 
-.contact form label {
-  width: 100%;
-  font-size: 1.45rem;
-  margin-bottom: 5px;
-}
-
 .contact form input {
   width: 700px;
   margin-bottom: 20px;
@@ -74,4 +78,148 @@
   cursor: pointer;
   background-color: #241c79;
   color: white;
+}
+
+.message-success {
+  position: absolute;
+  bottom: 100px;
+}
+
+@media (max-width: 414px) {
+  .contact {
+    height: 100vh;
+  }
+  .contact img {
+    display: none;
+  }
+  .contact h2 {
+    font-size: 3rem;
+  }
+  .social-icons {
+    width: 300px;
+  }
+  .social-icons a {
+    color: #241c79;
+  }
+  .contact p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 100vw;
+  }
+  .contact form input {
+    width: 90vw;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .contact form textarea {
+    width: 90vw;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .contact form input:last-child {
+    cursor: pointer;
+    background-color: #241c79;
+    color: white;
+  }
+
+  .message-success {
+    position: absolute;
+    bottom: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact {
+    height: 100vh;
+  }
+  .contact img {
+    display: none;
+  }
+  .contact h2 {
+    font-size: 3rem;
+  }
+  .social-icons {
+    width: 300px;
+  }
+  .social-icons a {
+    color: #241c79;
+  }
+  .contact p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 100vw;
+  }
+  .contact form input {
+    width: 90vw;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .contact form textarea {
+    width: 90vw;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .contact form input:last-child {
+    cursor: pointer;
+    background-color: #241c79;
+    color: white;
+  }
+
+  .message-success {
+    position: absolute;
+    bottom: 0px;
+  }
+}
+
+@media (max-width: 320px) {
+  .contact {
+    height: 100vh;
+  }
+  .contact img {
+    display: none;
+  }
+  .contact h2 {
+    font-size: 2rem;
+  }
+  .social-icons {
+    width: 250px;
+    margin-top: 5px;
+  }
+  .social-icons a {
+    color: #241c79;
+  }
+  .contact p {
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 100vw;
+  }
+  .contact form input {
+    width: 90vw;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .contact form textarea {
+    width: 90vw;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .contact form input:last-child {
+    cursor: pointer;
+    background-color: #241c79;
+    color: white;
+  }
+
+  .message-success {
+    position: absolute;
+    bottom: -5px;
+  }
 }
