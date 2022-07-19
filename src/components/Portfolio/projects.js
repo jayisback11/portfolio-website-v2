@@ -11,6 +11,7 @@ export const projects = [
     description:
       "NOLM House Church is a growing church that welcomes anyone and wants to make a difference. That is why I built this website for my client. People can learn more about NOLM House Church by visiting the website.",
     libraries: ["Firebase", "Material-UI"],
+    private: true
   },
   {
     name: "Portfolio Website",
@@ -20,6 +21,7 @@ export const projects = [
     description:
       "My first portfolio website was insufficient since it lacked animations and did not demonstrate my abilities. This new portfolio website's goal is to demonstrate what I've learned.",
     libraries: ["react-aos", "react-parallax"],
+    private: false
   },
   {
     name: "Netflix Clone",
@@ -29,5 +31,6 @@ export const projects = [
     description:
       "I learned how to work with an API and display movies on a screen. This clone is also mobile responsive. As a result, any device will be able to access this website.",
     libraries: ["Axios", "Dotenv", "Firebase", "Stripe"],
+    private: false
   },
 ];

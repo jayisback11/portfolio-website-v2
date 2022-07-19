@@ -2,6 +2,9 @@
   height: auto;
   width: 100vw;
   overflow-y: hidden;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  transition: all 0.4s ease-in-out;
 }
 
 .porfolio h2 {
@@ -14,7 +17,7 @@
   margin-left: 10%;
   margin-right: 10%;
   display: flex;
-  margin-top: 10%;
+  margin-top: 50px;
   position: relative;
 }
 
@@ -31,7 +34,7 @@
 }
 
 .project-description p {
-  font-size: 2.25rem;
+  font-size: 1.5rem;
   margin-top: 10px;
 }
 
@@ -66,7 +69,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 0;
   position: absolute;
   bottom: 0;
 }
@@ -94,6 +97,16 @@
   border-right: 2px solid #241c79;
 }
 
+.project-links > .hidden {
+  background-color: gray;
+}
+
+.project-links > .hidden:hover {
+  transform: none;
+  border-top: none;
+  border-right: none;
+}
+
 .project-icon {
   margin-right: 5px;
 }
@@ -104,7 +117,7 @@
   }
 
   .project-description p {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   .libraries p {
@@ -127,7 +140,7 @@
   }
 
   .project-description p {
-    font-size: 1.65rem;
+    font-size: 1.5rem;
   }
 
   .libraries p {
@@ -144,7 +157,7 @@
   }
 
   .project-description p {
-    font-size: 1.55rem;
+    font-size: 1.5rem;
   }
 
   .libraries p {

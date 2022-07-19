@@ -39,6 +39,7 @@ function Contact () {
         data-aos='fade-down-right'
         data-aos-duration={2000}
         data-aos-offset={500}
+        style={{zIndex: 1}}
       />
       <h2>Contact</h2>
       <div className='social-icons'>
